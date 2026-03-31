@@ -7,7 +7,6 @@ import AboutSection from "./AboutSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
 
-
 type Props = {
   view: "home" | "about" | "projects" | "contact";
 };
@@ -27,16 +26,22 @@ export default function Hero({ view }: Props) {
             </Text>
           </div>
         </header>
-        <div className="border-1 border-brand-dark dark:border-brand-light w-full h-full flex flex-col flex-1 overflow-hidden overflow-y-auto">
-          <div className="flex justify-center items-center w-full flex-1">
+        <div
+          className="border-1 border-brand-dark dark:border-brand-light w-full h-full flex flex-col flex-1 overflow-hidden overflow-y-auto"
+          style={{
+            scrollbarWidth: "none", // Firefox
+            msOverflowStyle: "none", // IE/Edge
+          }}
+        >
+          <div className="flex justify-center items-center w-full flex-1 [&::-webkit-scrollbar]:hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={view}
-                initial={{ opacity: 0}}
+                initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="flex-1 flex w-full h-full overflow-y-auto"
+                className="flex-1 flex w-full h-full"
               >
                 {view === "home" && <HomeSection />}
                 {view === "about" && <AboutSection />}

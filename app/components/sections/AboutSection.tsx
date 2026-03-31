@@ -3,7 +3,7 @@ import Text from "../ui/Text";
 export default function AboutSection() {
   return (
     <div className="flex justify-end items-end m-2 lg:m-5">
-      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[60%] space-y-5">
+      <div className="flex flex-col items-center justify-center w-[80%] lg:w-[80%] space-y-5">
         {/* Professional Details */}
         <div className="flex flex-col space-y-2 text-left mt-30">
           <Text as="h2" className="text-brand-accent">
