@@ -5,7 +5,6 @@ import { useState } from "react";
 import NavBar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
 import Text from "./components/ui/Text";
-import HeroContent from "./components/sections/HeroContent";
 
 type view = "home" | "about" | "projects" | "contact";
 

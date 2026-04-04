@@ -25,7 +25,7 @@ export default function AboutSection() {
           </Text>
         </div>
         {/* Personal Details */}
-        <div className="flex flex-col space-y-2 text-right w-full">
+        <div className="flex flex-col space-y-2 text-left w-full">
           <Text as="h2" className="text-brand-accent">
             Personal Background
           </Text>
@@ -58,7 +58,7 @@ export default function AboutSection() {
           </ol>
         </div>
         {/* Awards */}
-        <div className="flex flex-col space-y-2 text-right w-full">
+        <div className="flex flex-col space-y-2 text-left w-full">
           <Text as="h2" className="text-brand-accent">
             Awards
           </Text>
