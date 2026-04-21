@@ -9,11 +9,7 @@ export default function HomeSection() {
             as="p"
             className="text-brand-dark dark:text-brand-light font-thin"
           >
-            I see web design as a form of art, and am looking to join a team
-            that shares that perspective. Looking to contribute to thoughtful,
-            fulfilling work where I can add value with my expertise while
-            continuing to learn from others and grow into a more well-rounded
-            developer.
+            Web design is art, and in search to work with others that feel the same.
           </Text>
         </div>
       </div>

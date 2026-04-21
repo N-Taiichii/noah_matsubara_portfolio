@@ -9,7 +9,7 @@ import Text from "./components/ui/Text";
 type view = "home" | "about" | "projects" | "contact";
 
 export default function Home() {
-  const [view, setView] = useState<View>("home");
+  const [view, setView] = useState<view>("home");
 
   return (
     <div className="center-flex flex-col w-full scroll-smooth overflow-x-hidden">
